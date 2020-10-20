@@ -10,7 +10,7 @@ namespace ChessLib.Pieces
         {
         }
 
-        public override bool CanMove((int x, int y) to, PiecesState piecesState, BoardState boardState)
+        public override bool CanMove((int x, int y) to, PiecesState piecesState, IBoardState boardState)
         {
             //TODO: Support the case where there might be of axis players
 

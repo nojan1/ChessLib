@@ -34,6 +34,6 @@ namespace ChessLib.Pieces
             Color = color;
         }
 
-        public abstract bool CanMove((int x, int y) to, PiecesState piecesState, BoardState boardState);
+        public abstract bool CanMove((int x, int y) to, PiecesState piecesState, IBoardState boardState);
     }
 }

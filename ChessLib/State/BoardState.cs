@@ -6,7 +6,7 @@ using ChessLib.Pieces;
 
 namespace ChessLib.State
 {
-    public class BoardState
+    public class BoardState : IBoardState
     {
         public int BoardWidth { get; private set; }
         public int BoardHeight { get; private set; }

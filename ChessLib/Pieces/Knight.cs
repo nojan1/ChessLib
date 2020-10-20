@@ -10,7 +10,7 @@ namespace ChessLib.Pieces
         {
         }
 
-        public override bool CanMove((int x, int y) to, PiecesState piecesState, BoardState boardState)
+        public override bool CanMove((int x, int y) to, PiecesState piecesState, IBoardState boardState)
         {
             var positions = FluentList.Create<(int x, int y)>()
                 .With((Position.x - 1 ,Position.y - 2))
