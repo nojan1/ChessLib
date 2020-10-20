@@ -6,6 +6,11 @@ namespace ChessLib.Tests.Fixtures
 {
     internal static class BoardSetupFixtures
     {
+        internal static (BoardState boardState, PiecesState piecesState) GetEmpty()
+        {
+            return (new BoardState(), new PiecesState());
+        }
+
         internal static (BoardState boardState, PiecesState piecesState) GetInitialSetup()
         {
             var boardState = new BoardState();
